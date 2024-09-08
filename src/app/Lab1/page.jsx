@@ -29,7 +29,7 @@ export default function Lab1() {
 
 	return (
 		<section className='grid place-items-center h-dvh w-dvw'>
-			<div className='flex flex-col items-center p-5 font-sans'>
+			<div className='bg-white rounded-lg text-black flex flex-col items-center p-5 font-sans'>
 				<h1 className='text-2xl font-bold mb-5'>Quadratic Equation Solver</h1>
 				<input type='number' value={a} onChange={(e) => setA(e.target.value)} onKeyDown={handleKeyDown} placeholder='Enter a' className='w-52 h-10 mb-3 px-2 border border-gray-300 rounded text-black' />
 				<input type='number' value={b} onChange={(e) => setB(e.target.value)} onKeyDown={handleKeyDown} placeholder='Enter b' className='w-52 h-10 mb-3 px-2 border border-gray-300 rounded text-black' />
