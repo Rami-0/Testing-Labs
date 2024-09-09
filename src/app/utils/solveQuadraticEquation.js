@@ -4,9 +4,14 @@ export function solveQuadraticEquation(a, b, c) {
 	a = Number(a);
 	b = Number(b);
 	c = Number(c);
-
+	const LIMIT = 1e10;
+	const NEG_LIMIT = -LIMIT;
 	if (isNaN(a) || isNaN(b) || isNaN(c)) {
 		return 'Invalid input. Please enter numbers.';
+	}
+
+	if (a > LIMIT || a < NEG_LIMIT || b > LIMIT || b < NEG_LIMIT || c > LIMIT || c < NEG_LIMIT) {
+		return 'Invalid input. Please enter numbers between -1e10 and 1e10.';
 	}
 
 	// Check if it's not a quadratic equation
