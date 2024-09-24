@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import { quadraticSolver } from '../utils/quadraticSolver';
+import { quadraticSolver } from '../../utils/quadraticSolver';
 
 export default function QuadraticEquationSolver() {
 	const [a, setA] = useState('');

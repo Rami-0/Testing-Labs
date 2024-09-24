@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import { fibonacci } from '../utils/fibonacci';
+import { fibonacci } from '../../utils/fibonacci';
 
 export default function FibonacciCalculator() {
 	const [input, setInput] = useState('');
